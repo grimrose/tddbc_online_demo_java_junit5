@@ -1,6 +1,7 @@
 package tddbc;
 
-import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * ## demoのシナリオ
@@ -20,7 +21,7 @@ import org.junit.jupiter.api.Disabled;
  */
 public class TodoTest {
 
-    @Disabled
+    @Test
     public void test1() throws Exception {
         Todo todo = new Todo();
 
@@ -37,6 +38,7 @@ public class TodoTest {
         // 変更結果を取得するメソッドをずらずらと呼ぶ
 
         // 変更結果のアサーションがずらずらと
+        assertTrue(true);
 
         // 内部で外部にアクセスしている箇所があるので、戻すメソッドを呼ぶ 
     }   
