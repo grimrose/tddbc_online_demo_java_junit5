@@ -33,19 +33,19 @@ public class GridPointTest {
     }
 
     @Test
-    public void 格子点_4_7_と格子点_3_7_は隣り合っている() {
+    public void 格子点_4_7_と左隣の格子点_3_7_は隣り合っている() {
         GridPoint sut = new GridPoint(4, 7);
         assertTrue(sut.isNeighborOn(new GridPoint(3, 7)));
     }
 
     @Test
-    public void 格子点_4_7_と格子点_4_7_は隣り合っていない() {
+    public void 格子点_4_7_と同じ座標の格子点_4_7_は隣り合っていない() {
         GridPoint sut = new GridPoint(4, 7);
         assertFalse(sut.isNeighborOn(new GridPoint(4, 7)));
     }
 
     @Test
-    public void 格子点_4_7_と格子点_5_7_は隣り合っている() {
+    public void 格子点_4_7_と右隣の格子点_5_7_は隣り合っている() {
         GridPoint sut = new GridPoint(4, 7);
         assertTrue(sut.isNeighborOn(new GridPoint(5, 7)));
     }
